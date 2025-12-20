@@ -3,6 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { ArrowRight, CheckCircle2, Code2, Cpu, Layers, Terminal, Rocket, ShieldCheck, BrainCircuit } from "lucide-react";
+import { Testimonials } from "@/components/Testimonials";
 
 export default function Home() {
   return (
@@ -303,6 +304,9 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* Testimonials Section */}
+        <Testimonials />
 
         {/* Skills & Expertise */}
         <section id="services" className="py-20 bg-muted/30 border-b">
