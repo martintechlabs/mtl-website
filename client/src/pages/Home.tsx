@@ -51,9 +51,11 @@ export default function Home() {
                 I fix broken processes, speed up delivery, and prepare platforms to scale.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <Button size="lg" className="font-mono group">
-                  Schedule a Call
-                  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                <Button size="lg" className="font-mono group" asChild>
+                  <a href="https://calendly.com/martintechlabs/discovery" target="_blank" rel="noopener noreferrer">
+                    Schedule a Call
+                    <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  </a>
                 </Button>
                 <Button size="lg" variant="outline" className="font-mono" asChild>
                   <a href="#case-studies">View Case Studies</a>
