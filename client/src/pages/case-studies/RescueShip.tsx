@@ -60,7 +60,7 @@ export default function RescueShip() {
               </div>
               <div className="relative aspect-video rounded-lg overflow-hidden border border-primary/20 shadow-2xl">
                 <img 
-                  src="/src/assets/diagram-rescue-ship.png" 
+                  src="/images/diagram-rescue-ship.png" 
                   alt="Agile Workflow Transformation Diagram" 
                   className="w-full h-full object-cover"
                 />

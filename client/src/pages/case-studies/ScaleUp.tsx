@@ -60,7 +60,7 @@ export default function ScaleUp() {
               </div>
               <div className="relative aspect-video rounded-lg overflow-hidden border border-primary/20 shadow-2xl">
                 <img 
-                  src="/src/assets/diagram-scale-up.png" 
+                  src="/images/diagram-scale-up.png" 
                   alt="Microservices Architecture Diagram" 
                   className="w-full h-full object-cover"
                 />

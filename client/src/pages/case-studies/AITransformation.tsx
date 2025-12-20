@@ -60,7 +60,7 @@ export default function AITransformation() {
               </div>
               <div className="relative aspect-video rounded-lg overflow-hidden border border-primary/20 shadow-2xl">
                 <img 
-                  src="/src/assets/diagram-ai-transformation.png" 
+                  src="/images/diagram-ai-transformation.png" 
                   alt="RAG Architecture Diagram" 
                   className="w-full h-full object-cover"
                 />

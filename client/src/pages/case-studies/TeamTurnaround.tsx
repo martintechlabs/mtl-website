@@ -60,7 +60,7 @@ export default function TeamTurnaround() {
               </div>
               <div className="relative aspect-video rounded-lg overflow-hidden border border-primary/20 shadow-2xl">
                 <img 
-                  src="/src/assets/diagram-team-turnaround.png" 
+                  src="/images/diagram-team-turnaround.png" 
                   alt="Team Structure Diagram" 
                   className="w-full h-full object-cover"
                 />
