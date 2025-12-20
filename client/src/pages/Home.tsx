@@ -384,10 +384,11 @@ export default function Home() {
                   <div className="absolute inset-4 border-2 border-dashed border-primary/20 rounded-full animate-[spin_15s_linear_infinite_reverse]"></div>
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="w-48 h-48 bg-muted rounded-full overflow-hidden border-4 border-background shadow-xl">
-                      {/* Placeholder for profile image if available, or initials */}
-                      <div className="w-full h-full flex items-center justify-center bg-primary text-primary-foreground text-4xl font-bold font-mono">
-                        SM
-                      </div>
+                      <img 
+                        src="/images/stephen-martin.jpeg" 
+                        alt="Stephen Martin" 
+                        className="w-full h-full object-cover"
+                      />
                     </div>
                   </div>
                 </div>
