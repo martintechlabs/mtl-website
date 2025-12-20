@@ -153,7 +153,8 @@ export default function Home() {
 
             <div className="grid md:grid-cols-2 gap-8">
               {/* Case Study 1: Rescue & Ship */}
-              <Card className="group overflow-hidden border-muted hover:border-primary/50 transition-colors flex flex-col">
+              <a href="/case-studies/rescue-ship" className="block h-full">
+              <Card className="group h-full overflow-hidden border-muted hover:border-primary/50 transition-colors flex flex-col cursor-pointer">
                 <div className="h-48 overflow-hidden bg-muted relative shrink-0">
                   <img 
                     src="/images/project-firstradicle.png" 
@@ -189,9 +190,11 @@ export default function Home() {
                   </div>
                 </CardContent>
               </Card>
+              </a>
 
               {/* Case Study 2: AI Transformation */}
-              <Card className="group overflow-hidden border-muted hover:border-primary/50 transition-colors flex flex-col">
+              <a href="/case-studies/ai-transformation" className="block h-full">
+              <Card className="group h-full overflow-hidden border-muted hover:border-primary/50 transition-colors flex flex-col cursor-pointer">
                 <div className="h-48 overflow-hidden bg-muted relative shrink-0">
                   <img 
                     src="/images/project-smarttasker.png" 
@@ -227,9 +230,11 @@ export default function Home() {
                   </div>
                 </CardContent>
               </Card>
+              </a>
 
               {/* Case Study 3: Scale-Up */}
-              <Card className="group overflow-hidden border-muted hover:border-primary/50 transition-colors flex flex-col">
+              <a href="/case-studies/scale-up" className="block h-full">
+              <Card className="group h-full overflow-hidden border-muted hover:border-primary/50 transition-colors flex flex-col cursor-pointer">
                 <div className="h-48 overflow-hidden bg-muted relative shrink-0">
                   <img 
                     src="/images/project-directai.png" 
@@ -265,9 +270,11 @@ export default function Home() {
                   </div>
                 </CardContent>
               </Card>
+              </a>
 
               {/* Case Study 4: Team Turnaround */}
-              <Card className="group overflow-hidden border-muted hover:border-primary/50 transition-colors flex flex-col">
+              <a href="/case-studies/team-turnaround" className="block h-full">
+              <Card className="group h-full overflow-hidden border-muted hover:border-primary/50 transition-colors flex flex-col cursor-pointer">
                 <div className="h-48 overflow-hidden bg-muted relative shrink-0">
                   <img 
                     src="/images/project-wehired.png" 
@@ -303,6 +310,7 @@ export default function Home() {
                   </div>
                 </CardContent>
               </Card>
+              </a>
             </div>
           </div>
         </section>
