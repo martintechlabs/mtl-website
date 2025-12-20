@@ -374,7 +374,7 @@ export default function Home() {
                     </a>
                   </Button>
                   <Button variant="outline" asChild>
-                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://x.com/martintechlabs" target="_blank" rel="noopener noreferrer">
                       Follow on Twitter
                     </a>
                   </Button>
