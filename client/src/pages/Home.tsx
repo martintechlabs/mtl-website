@@ -16,7 +16,7 @@ export default function Home() {
           </div>
           <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
             <a href="#services" className="hover:text-primary transition-colors">Services</a>
-            <a href="#projects" className="hover:text-primary transition-colors">Projects</a>
+            <a href="#case-studies" className="hover:text-primary transition-colors">Case Studies</a>
             <a href="#about" className="hover:text-primary transition-colors">About</a>
             <Button variant="outline" className="font-mono text-xs" asChild>
               <a href="https://linkedin.com/in/stephenmartin" target="_blank" rel="noopener noreferrer">LinkedIn</a>
@@ -54,8 +54,8 @@ export default function Home() {
                   Schedule a Call
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </Button>
-                <Button size="lg" variant="outline" className="font-mono">
-                  View Projects
+                <Button size="lg" variant="outline" className="font-mono" asChild>
+                  <a href="#case-studies">View Case Studies</a>
                 </Button>
               </div>
             </div>
@@ -137,129 +137,166 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Projects Section */}
-        <section id="projects" className="py-20 border-b">
+        {/* Case Studies Section */}
+        <section id="case-studies" className="py-20 border-b">
           <div className="container">
             <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
               <div>
-                <Badge variant="outline" className="mb-4 font-mono">Portfolio</Badge>
-                <h2 className="text-3xl md:text-4xl font-bold font-mono">Selected Projects</h2>
-                <p className="text-muted-foreground mt-2">Examples of systems built and launched.</p>
+                <Badge variant="outline" className="mb-4 font-mono">Case Studies</Badge>
+                <h2 className="text-3xl md:text-4xl font-bold font-mono">Proven Results</h2>
+                <p className="text-muted-foreground mt-2">Real-world examples of problems solved and value delivered.</p>
               </div>
-              <Button variant="ghost" className="font-mono group">
-                View All <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-              </Button>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6">
-              {/* Project 1 */}
-              <Card className="group overflow-hidden border-muted hover:border-primary/50 transition-colors">
-                <div className="h-48 overflow-hidden bg-muted relative">
-                  <img 
-                    src="/images/project-smarttasker.png" 
-                    alt="SmartTaskerAI" 
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
-                </div>
-                <CardHeader>
-                  <div className="flex justify-between items-start">
-                    <CardTitle className="font-mono text-xl">SmartTaskerAI</CardTitle>
-                    <Badge variant="secondary" className="font-mono text-xs">AI Toolkit</Badge>
-                  </div>
-                  <CardDescription>
-                    AI-driven productivity toolkit to orchestrate agents, prompts, and context pipelines.
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex gap-2 flex-wrap">
-                    <Badge variant="outline" className="text-xs">Python</Badge>
-                    <Badge variant="outline" className="text-xs">LLMs</Badge>
-                    <Badge variant="outline" className="text-xs">Orchestration</Badge>
-                  </div>
-                </CardContent>
-              </Card>
-
-              {/* Project 2 */}
-              <Card className="group overflow-hidden border-muted hover:border-primary/50 transition-colors">
-                <div className="h-48 overflow-hidden bg-muted relative">
+            <div className="grid md:grid-cols-2 gap-8">
+              {/* Case Study 1: Rescue & Ship */}
+              <Card className="group overflow-hidden border-muted hover:border-primary/50 transition-colors flex flex-col">
+                <div className="h-48 overflow-hidden bg-muted relative shrink-0">
                   <img 
                     src="/images/project-firstradicle.png" 
-                    alt="First Radicle" 
+                    alt="Rocket Launch Blueprint" 
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
+                  <div className="absolute bottom-4 left-4">
+                    <Badge className="bg-primary text-primary-foreground font-mono">Velocity & Process</Badge>
+                  </div>
                 </div>
                 <CardHeader>
-                  <div className="flex justify-between items-start">
-                    <CardTitle className="font-mono text-xl">First Radicle</CardTitle>
-                    <Badge variant="secondary" className="font-mono text-xs">Accelerator</Badge>
-                  </div>
-                  <CardDescription>
-                    Helping founders graduate from prototypes to production with better systems and developer practices.
-                  </CardDescription>
+                  <CardTitle className="font-mono text-xl leading-tight">Unblocking a Stalled Roadmap: From 0 to Launch in 90 Days</CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <div className="flex gap-2 flex-wrap">
-                    <Badge variant="outline" className="text-xs">DevOps</Badge>
-                    <Badge variant="outline" className="text-xs">Infrastructure</Badge>
-                    <Badge variant="outline" className="text-xs">Scaling</Badge>
+                <CardContent className="space-y-4 flex-1">
+                  <div>
+                    <h4 className="text-sm font-bold text-muted-foreground uppercase tracking-wider mb-1">The Challenge</h4>
+                    <p className="text-sm">A Series A fintech startup had a bloated backlog and a team paralyzed by technical debt. No new features had shipped in 4 months.</p>
+                  </div>
+                  <div>
+                    <h4 className="text-sm font-bold text-muted-foreground uppercase tracking-wider mb-1">The Solution</h4>
+                    <p className="text-sm">Conducted an architecture audit, implemented a pragmatic Agile workflow, and cut scope to the essentials.</p>
+                  </div>
+                  <div className="pt-2">
+                    <div className="flex items-center gap-2 text-primary font-medium">
+                      <CheckCircle2 className="h-4 w-4" />
+                      <span>Shipped MVP in 12 weeks</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-primary font-medium">
+                      <CheckCircle2 className="h-4 w-4" />
+                      <span>Reduced bug reports by 60%</span>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
 
-              {/* Project 3 */}
-              <Card className="group overflow-hidden border-muted hover:border-primary/50 transition-colors">
-                <div className="h-48 overflow-hidden bg-muted relative">
+              {/* Case Study 2: AI Transformation */}
+              <Card className="group overflow-hidden border-muted hover:border-primary/50 transition-colors flex flex-col">
+                <div className="h-48 overflow-hidden bg-muted relative shrink-0">
                   <img 
-                    src="/images/project-wehired.png" 
-                    alt="WeHired" 
+                    src="/images/project-smarttasker.png" 
+                    alt="AI Brain Blueprint" 
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
+                  <div className="absolute bottom-4 left-4">
+                    <Badge className="bg-primary text-primary-foreground font-mono">AI & Innovation</Badge>
+                  </div>
                 </div>
                 <CardHeader>
-                  <div className="flex justify-between items-start">
-                    <CardTitle className="font-mono text-xl">WeHired</CardTitle>
-                    <Badge variant="secondary" className="font-mono text-xs">HR Tech</Badge>
-                  </div>
-                  <CardDescription>
-                    Automated clinician onboarding & compliance with auditable workflows.
-                  </CardDescription>
+                  <CardTitle className="font-mono text-xl leading-tight">Architecting a Custom GenAI Pipeline for Enterprise Data</CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <div className="flex gap-2 flex-wrap">
-                    <Badge variant="outline" className="text-xs">Compliance</Badge>
-                    <Badge variant="outline" className="text-xs">Automation</Badge>
-                    <Badge variant="outline" className="text-xs">Workflow</Badge>
+                <CardContent className="space-y-4 flex-1">
+                  <div>
+                    <h4 className="text-sm font-bold text-muted-foreground uppercase tracking-wider mb-1">The Challenge</h4>
+                    <p className="text-sm">A healthcare data company wanted to leverage LLMs but couldn't risk data privacy leaks or hallucinations.</p>
+                  </div>
+                  <div>
+                    <h4 className="text-sm font-bold text-muted-foreground uppercase tracking-wider mb-1">The Solution</h4>
+                    <p className="text-sm">Designed a secure, local-first RAG (Retrieval-Augmented Generation) architecture and led the engineering team to build it.</p>
+                  </div>
+                  <div className="pt-2">
+                    <div className="flex items-center gap-2 text-primary font-medium">
+                      <CheckCircle2 className="h-4 w-4" />
+                      <span>Secure natural language querying</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-primary font-medium">
+                      <CheckCircle2 className="h-4 w-4" />
+                      <span>Opened $5M revenue stream</span>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
 
-              {/* Project 4 */}
-              <Card className="group overflow-hidden border-muted hover:border-primary/50 transition-colors">
-                <div className="h-48 overflow-hidden bg-muted relative">
+              {/* Case Study 3: Scale-Up */}
+              <Card className="group overflow-hidden border-muted hover:border-primary/50 transition-colors flex flex-col">
+                <div className="h-48 overflow-hidden bg-muted relative shrink-0">
                   <img 
                     src="/images/project-directai.png" 
-                    alt="DirectAI" 
+                    alt="Microchip Blueprint" 
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
+                  <div className="absolute bottom-4 left-4">
+                    <Badge className="bg-primary text-primary-foreground font-mono">Distributed Systems</Badge>
+                  </div>
                 </div>
                 <CardHeader>
-                  <div className="flex justify-between items-start">
-                    <CardTitle className="font-mono text-xl">DirectAI</CardTitle>
-                    <Badge variant="secondary" className="font-mono text-xs">AI Platform</Badge>
-                  </div>
-                  <CardDescription>
-                    Direct AI platform for USRN Partners.
-                  </CardDescription>
+                  <CardTitle className="font-mono text-xl leading-tight">Stabilizing Infrastructure for 10x User Growth</CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <div className="flex gap-2 flex-wrap">
-                    <Badge variant="outline" className="text-xs">AI</Badge>
-                    <Badge variant="outline" className="text-xs">Platform</Badge>
-                    <Badge variant="outline" className="text-xs">B2B</Badge>
+                <CardContent className="space-y-4 flex-1">
+                  <div>
+                    <h4 className="text-sm font-bold text-muted-foreground uppercase tracking-wider mb-1">The Challenge</h4>
+                    <p className="text-sm">A consumer app hit viral growth, but their monolithic MVP crashed every time traffic spiked.</p>
+                  </div>
+                  <div>
+                    <h4 className="text-sm font-bold text-muted-foreground uppercase tracking-wider mb-1">The Solution</h4>
+                    <p className="text-sm">Migrated critical services to a microservices architecture, implemented auto-scaling, and optimized database queries.</p>
+                  </div>
+                  <div className="pt-2">
+                    <div className="flex items-center gap-2 text-primary font-medium">
+                      <CheckCircle2 className="h-4 w-4" />
+                      <span>99.99% uptime during peak traffic</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-primary font-medium">
+                      <CheckCircle2 className="h-4 w-4" />
+                      <span>40% reduction in cloud costs</span>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Case Study 4: Team Turnaround */}
+              <Card className="group overflow-hidden border-muted hover:border-primary/50 transition-colors flex flex-col">
+                <div className="h-48 overflow-hidden bg-muted relative shrink-0">
+                  <img 
+                    src="/images/project-wehired.png" 
+                    alt="Shield/Compliance Blueprint" 
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
+                  <div className="absolute bottom-4 left-4">
+                    <Badge className="bg-primary text-primary-foreground font-mono">Leadership & Hiring</Badge>
+                  </div>
+                </div>
+                <CardHeader>
+                  <CardTitle className="font-mono text-xl leading-tight">Building a High-Performance Engineering Culture</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4 flex-1">
+                  <div>
+                    <h4 className="text-sm font-bold text-muted-foreground uppercase tracking-wider mb-1">The Challenge</h4>
+                    <p className="text-sm">Founders were frustrated by a lack of visibility and high developer turnover. They didn't know if they had the right people.</p>
+                  </div>
+                  <div>
+                    <h4 className="text-sm font-bold text-muted-foreground uppercase tracking-wider mb-1">The Solution</h4>
+                    <p className="text-sm">Established clear engineering metrics (DORA), mentored the lead engineer, and restructured the hiring process.</p>
+                  </div>
+                  <div className="pt-2">
+                    <div className="flex items-center gap-2 text-primary font-medium">
+                      <CheckCircle2 className="h-4 w-4" />
+                      <span>Tripled deployment frequency</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-primary font-medium">
+                      <CheckCircle2 className="h-4 w-4" />
+                      <span>Retained 100% of key talent</span>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
