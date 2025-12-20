@@ -20,7 +20,7 @@ export default function Home() {
             <a href="#case-studies" className="hover:text-primary transition-colors">Case Studies</a>
             <a href="#about" className="hover:text-primary transition-colors">About</a>
             <Button variant="outline" className="font-mono text-xs" asChild>
-              <a href="https://linkedin.com/in/stephenmartin" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a href="https://www.linkedin.com/in/stephencmartin/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </Button>
           </nav>
         </div>
@@ -369,7 +369,7 @@ export default function Home() {
                 </p>
                 <div className="flex gap-4">
                   <Button variant="outline" asChild>
-                    <a href="https://linkedin.com/in/stephenmartin" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/stephencmartin/" target="_blank" rel="noopener noreferrer">
                       Connect on LinkedIn
                     </a>
                   </Button>
