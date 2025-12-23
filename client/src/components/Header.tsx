@@ -66,7 +66,7 @@ export function Header() {
                     <a 
                       key={link.href}
                       href={link.href} 
-                      className="text-lg font-medium hover:text-primary transition-colors py-2 border-b border-border/50"
+                      className="text-lg font-medium hover:text-primary transition-colors py-4 border-b border-border/50"
                       onClick={handleLinkClick}
                     >
                       {link.label}
@@ -76,7 +76,7 @@ export function Header() {
                     href="https://www.linkedin.com/in/stephencmartin/" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="text-lg font-medium hover:text-primary transition-colors py-2 border-b border-border/50"
+                    className="text-lg font-medium hover:text-primary transition-colors py-4 border-b border-border/50"
                     onClick={handleLinkClick}
                   >
                     LinkedIn
