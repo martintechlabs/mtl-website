@@ -23,7 +23,7 @@ export function Header() {
       <div className="container flex h-16 items-center justify-between">
         <Link href="/">
           <a className="flex items-center gap-2 font-mono font-bold text-xl tracking-tighter hover:opacity-80 transition-opacity">
-            <img src="/logo.webp" alt="Martin Tech Labs Logo" className="h-8 w-8 rounded-sm object-contain" />
+            <img src="/images/logo.webp" alt="Martin Tech Labs Logo" className="h-8 w-8 rounded-sm object-contain" />
             <span>Martin Tech Labs</span>
           </a>
         </Link>
@@ -57,7 +57,7 @@ export function Header() {
               <div className="flex flex-col gap-8 mt-8">
                 <Link href="/">
                   <a className="flex items-center gap-2 font-mono font-bold text-xl tracking-tighter" onClick={handleLinkClick}>
-                    <img src="/logo.webp" alt="Martin Tech Labs Logo" className="h-8 w-8 rounded-sm object-contain" />
+                    <img src="/images/logo.webp" alt="Martin Tech Labs Logo" className="h-8 w-8 rounded-sm object-contain" />
                     <span>Martin Tech Labs</span>
                   </a>
                 </Link>
