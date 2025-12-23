@@ -54,7 +54,7 @@ export function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] sm:w-[400px] border-l border-border/50 bg-background/95 backdrop-blur-xl">
-              <div className="flex flex-col gap-8 mt-8">
+              <div className="flex flex-col gap-8 mt-8 px-4">
                 <Link href="/">
                   <a className="flex items-center gap-2 font-mono font-bold text-xl tracking-tighter" onClick={handleLinkClick}>
                     <img src="/images/logo.webp" alt="Martin Tech Labs Logo" className="h-8 w-8 rounded-sm object-contain" />
