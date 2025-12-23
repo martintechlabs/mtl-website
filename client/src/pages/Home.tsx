@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Header } from "@/components/Header";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { ArrowRight, CheckCircle2, Code2, Cpu, Layers, Terminal, Rocket, ShieldCheck, BrainCircuit } from "lucide-react";
@@ -8,23 +9,7 @@ import { Testimonials } from "@/components/Testimonials";
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col font-sans selection:bg-primary selection:text-primary-foreground">
-      {/* Navigation */}
-      <header className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-16 items-center justify-between">
-          <div className="flex items-center gap-2 font-mono font-bold text-xl tracking-tighter">
-            <img src="/images/logo.webp" alt="Martin Tech Labs Logo" className="h-8 w-8 rounded-sm object-contain" />
-            <span>Martin Tech Labs</span>
-          </div>
-          <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
-            <a href="/services" className="hover:text-primary transition-colors">Services</a>
-            <a href="#case-studies" className="hover:text-primary transition-colors">Case Studies</a>
-            <a href="#about" className="hover:text-primary transition-colors">About</a>
-            <Button variant="outline" className="font-mono text-xs" asChild>
-              <a href="https://www.linkedin.com/in/stephencmartin/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            </Button>
-          </nav>
-        </div>
-      </header>
+      <Header />
 
       <main className="flex-1">
         {/* Hero Section */}
