@@ -121,12 +121,12 @@ export default function Home() {
                     <Separator />
                     <div className="flex gap-3 items-center">
                       <CheckCircle2 className="h-5 w-5 text-primary" />
-                      <span>Architecture reviews and making systems reliable</span>
+                      <span>Scalable Architecture reviews and making systems reliable</span>
                     </div>
                     <Separator />
                     <div className="flex gap-3 items-center">
                       <CheckCircle2 className="h-5 w-5 text-primary" />
-                      <span>Building better teams: hiring, coaching, and metrics</span>
+                      <span>Technical Leadership: hiring, coaching, and metrics</span>
                     </div>
                     <Separator />
                     <div className="flex gap-3 items-center">
