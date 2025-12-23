@@ -16,7 +16,7 @@ export default function Home() {
             <span>Martin Tech Labs</span>
           </div>
           <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
-            <a href="#services" className="hover:text-primary transition-colors">Services</a>
+            <a href="/services" className="hover:text-primary transition-colors">Services</a>
             <a href="#case-studies" className="hover:text-primary transition-colors">Case Studies</a>
             <a href="#about" className="hover:text-primary transition-colors">About</a>
             <Button variant="outline" className="font-mono text-xs" asChild>

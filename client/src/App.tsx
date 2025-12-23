@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
+import Services from "./pages/Services";
 import RescueShip from "./pages/case-studies/RescueShip";
 import AITransformation from "./pages/case-studies/AITransformation";
 import ScaleUp from "./pages/case-studies/ScaleUp";
@@ -22,6 +23,7 @@ function Router() {
   return (
     <Switch>
       <Route path={"/"} component={Home} />
+      <Route path={"/services"} component={Services} />
       <Route path={"/case-studies/rescue-ship"} component={RescueShip} />
       <Route path={"/case-studies/ai-transformation"} component={AITransformation} />
       <Route path={"/case-studies/scale-up"} component={ScaleUp} />
