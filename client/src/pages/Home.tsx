@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { ArrowRight, CheckCircle2, Code2, Cpu, Layers, Terminal, Rocket, ShieldCheck, BrainCircuit } from "lucide-react";
 import { Testimonials } from "@/components/Testimonials";
+import { Footer } from "@/components/Footer";
 import { useEffect } from "react";
 import { useLocation } from "wouter";
 
@@ -417,15 +418,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="py-8 border-t bg-muted/20">
-        <div className="container flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
-          <p>© 2025 Martin Tech Labs. All rights reserved.</p>
-          <div className="flex gap-6">
-            <a href="#" className="hover:text-primary">Privacy Policy</a>
-            <a href="#" className="hover:text-primary">Terms of Service</a>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
