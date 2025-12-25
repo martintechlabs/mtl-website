@@ -391,11 +391,7 @@ export default function Home() {
                       Connect on LinkedIn
                     </a>
                   </Button>
-                  <Button variant="outline" asChild>
-                    <a href="https://x.com/martintechlabs" target="_blank" rel="noopener noreferrer">
-                      Follow on Twitter
-                    </a>
-                  </Button>
+
                 </div>
               </div>
               <div className="flex-1 w-full flex justify-center">
