@@ -11,18 +11,18 @@ import { Quote } from "lucide-react";
 const testimonials = [
   {
     quote: "We were stuck in a loop of technical debt and missed deadlines. Stephen came in, cut through the noise, and got us shipping again in weeks. He didn't just fix our code; he fixed our engineering culture.",
-    author: "Sarah Jenkins",
-    role: "CEO, FinFlow (Series A Fintech)",
+    author: "Sarah J.",
+    role: "CEO, Series A Fintech",
   },
   {
     quote: "Building a secure AI pipeline for patient data seemed impossible with our internal team. Stephen designed a local-first architecture that passed every compliance audit and opened up a massive new revenue stream for us.",
-    author: "Dr. Marcus Chen",
-    role: "Founder, MedData Health",
+    author: "Marcus C.",
+    role: "Founder, HealthTech Startup",
   },
   {
     quote: "When our app went viral, our servers crashed. Stephen stepped in as Fractional CTO, migrated us to microservices, and stabilized the platform. We handled 10x traffic the next week without a hiccup.",
-    author: "Elena Rodriguez",
-    role: "Co-founder, PopStream",
+    author: "Elena R.",
+    role: "Co-founder, B2C Mobile App",
   },
 ];
 
