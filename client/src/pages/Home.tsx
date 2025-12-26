@@ -43,18 +43,18 @@ export default function Home() {
           </div>
           
           <div className="container relative z-10">
-            <div className="max-w-3xl space-y-6">
+            <div className="max-w-3xl space-y-6 lg:mx-auto lg:text-center lg:flex lg:flex-col lg:items-center">
               <Badge variant="outline" className="font-mono text-primary border-primary/50 bg-primary/10 px-4 py-1">
                 Fractional CTO Services
               </Badge>
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight font-mono">
                 Move Projects From <span className="text-muted-foreground line-through decoration-destructive decoration-4">Stuck</span> to <span className="text-primary">Shipped</span>
               </h1>
-              <p className="text-xl text-muted-foreground max-w-2xl leading-relaxed">
+              <p className="text-xl text-muted-foreground max-w-2xl leading-relaxed lg:mx-auto">
                 Helping Founders Ship Their First Product Fast with AI-Accelerated Engineering Teams. 
                 I fix broken processes, speed up delivery, and prepare platforms to scale.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 pt-4">
+              <div className="flex flex-col sm:flex-row gap-4 pt-4 lg:justify-center">
                 <Button size="lg" className="font-mono group" asChild>
                   <a href="https://calendly.com/martintechlabs/discovery" target="_blank" rel="noopener noreferrer">
                     Schedule a Call
@@ -333,7 +333,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
               <div className="flex flex-col items-center text-center p-6 border rounded-lg bg-background hover:border-primary/50 transition-colors">
                 <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mb-4 text-primary">
                   <Layers className="h-6 w-6" />

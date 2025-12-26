@@ -12,7 +12,6 @@ import AITransformation from "./pages/case-studies/AITransformation";
 import ScaleUp from "./pages/case-studies/ScaleUp";
 import TeamTurnaround from "./pages/case-studies/TeamTurnaround";
 
-
 function Router() {
   const [location] = useLocation();
 
@@ -25,9 +24,15 @@ function Router() {
       <Route path={"/"} component={Home} />
       <Route path={"/services"} component={Services} />
       <Route path={"/case-studies/rescue-ship"} component={RescueShip} />
-      <Route path={"/case-studies/ai-transformation"} component={AITransformation} />
+      <Route
+        path={"/case-studies/ai-transformation"}
+        component={AITransformation}
+      />
       <Route path={"/case-studies/scale-up"} component={ScaleUp} />
-      <Route path={"/case-studies/team-turnaround"} component={TeamTurnaround} />
+      <Route
+        path={"/case-studies/team-turnaround"}
+        component={TeamTurnaround}
+      />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
