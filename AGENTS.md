@@ -1,6 +1,6 @@
 # Martin Tech Labs Website - Agent Guide
 
-This document serves as a guide for AI agents and developers working on the Martin Tech Labs website. It outlines the project structure, tech stack, design system, and development conventions.
+This document serves as a guide for AI agents and developers working on the Martin Tech Labs website. It outlines the project structure, tech stack, and development conventions.
 
 ## 1. Project Overview
 
@@ -39,31 +39,17 @@ Martin Tech Labs is a fractional CTO service provider helping early-stage founde
 
 ## 4. Design System
 
-### Colors (Dark Mode Default)
-The project uses OKLCH color space for modern, vibrant colors.
+**⚠️ IMPORTANT:** The authoritative design system specification is located in `DESIGN.md`.
+Please refer to `DESIGN.md` for all details regarding:
 
--   **Background:** `oklch(0.10 0.02 260)` (Slate 950) - Deep, rich dark blue/gray
--   **Foreground:** `oklch(0.98 0 0)` (White) - High contrast text
--   **Primary:** `oklch(0.60 0.18 250)` (Blueprint Blue) - Main brand color
--   **Secondary:** `oklch(0.20 0.02 260)` (Slate 800) - Surface elements
--   **Accent:** `oklch(0.70 0.15 150)` (Success Green) - Highlights and calls to action
--   **Muted:** `oklch(0.20 0.02 260)` - Subdued backgrounds
--   **Border:** `oklch(0.30 0.02 260)` (Slate 700) - Subtle dividers
+-   **Design Principles**
+-   **Design Tokens** (Colors, Typography, Spacing)
+-   **Tailwind Rules**
+-   **Component System** (Radix-First)
+-   **Interaction & Motion**
+-   **Accessibility Standards**
 
-### Typography
--   **Sans-serif:** `"Inter", sans-serif` (Body text, UI elements)
--   **Monospace:** `"Space Grotesk", monospace` (Headings, technical accents)
-
-### Layout
--   **Container:** Custom utility with responsive padding:
-    -   Mobile: `px-4` (1rem)
-    -   Tablet: `px-6` (1.5rem)
-    -   Desktop: `px-8` (2rem), max-width `1280px`
-
-### Components
--   **Buttons:** `default` (Solid Primary), `outline` (Bordered), `ghost` (Text only)
--   **Cards:** Used heavily for services, case studies, and testimonials.
--   **Badges:** Used for tags and highlights.
+Do not duplicate design specifications here. `DESIGN.md` is the single source of truth.
 
 ## 5. Key Features & Implementation Details
 
