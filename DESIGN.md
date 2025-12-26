@@ -168,10 +168,4 @@ All interactive elements must define:
 ### Backward compatibility is default.
 ### Breaking changes must be explicit and documented.
 
-## Final Validation Checklist
 
-Before completing any UI task, verify:
--   [ ] A full UI can be built with zero guessing.
--   [ ] Design, Tailwind, and Radix responsibilities are explicit.
--   [ ] Accessibility is guaranteed by construction.
--   [ ] The document reads like a spec, not guidance.
