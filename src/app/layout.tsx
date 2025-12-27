@@ -3,6 +3,7 @@ import "./globals.css";
 import type { Metadata, Viewport } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
 import type { ReactNode } from "react";
+import { Analytics } from "@vercel/analytics/next";
 import { Providers } from "./providers";
 
 const fontSans = Inter({
@@ -32,12 +33,14 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" className={`${fontSans.variable} ${fontMono.variable} dark`}>
+    <html
+      lang="en"
+      className={`${fontSans.variable} ${fontMono.variable} dark`}
+    >
       <body>
         <Providers>{children}</Providers>
+        <Analytics />
       </body>
     </html>
   );
 }
-
-
