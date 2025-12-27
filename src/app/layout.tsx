@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" className={`${fontSans.variable} ${fontMono.variable}`}>
+    <html lang="en" className={`${fontSans.variable} ${fontMono.variable} dark`}>
       <body>
         <Providers>{children}</Providers>
       </body>
