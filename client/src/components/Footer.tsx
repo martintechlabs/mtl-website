@@ -1,9 +1,0 @@
-export function Footer() {
-  return (
-    <footer className="py-8 border-t bg-muted/20">
-      <div className="container flex flex-col items-center justify-center gap-4 text-sm text-muted-foreground">
-        <p>© 2025 Martin Tech Labs. All rights reserved.</p>
-      </div>
-    </footer>
-  );
-}
