@@ -30,7 +30,8 @@
     "moduleResolution": "bundler",
     "baseUrl": ".",
     "types": [
-      "node"
+      "node",
+      "@types/google.maps"
     ],
     "plugins": [
       {
